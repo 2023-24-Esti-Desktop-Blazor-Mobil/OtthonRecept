@@ -1,0 +1,63 @@
+﻿<Window
+    x:Class="ReceptProjekt.Views.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ReceptProjekt.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:view="clr-namespace:ReceptProjekt.Views"
+    xmlns:viewmodel="clr-namespace:ReceptProjekt.ViewModels"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Window.DataContext>
+        <viewmodel:MainViewModel />
+    </Window.DataContext>
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewmodel:BelepesViewModel}">
+            <view:Belepes />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewmodel:ReceptViewModel}">
+            <view:ReceptView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewmodel:CikkViewModel}">
+            <view:CikkView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewmodel:SzemelyViewModel}">
+            <view:SzemelyView />
+        </DataTemplate>
+
+
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <local:LeftPanel Grid.RowSpan="2" Grid.Column="0" />
+        <local:Menu Grid.Row="0" Grid.Column="2" />
+        <ContentControl
+            Grid.Row="1"
+            Grid.Column="1"
+            Content="{Binding ChildViewModel}" />
+        <StatusBar
+            Grid.Row="2"
+            Grid.ColumnSpan="2"
+            Height="30"
+            Background="ForestGreen">
+            <StackPanel Orientation="Horizontal">
+
+                <TextBlock Margin="10,0,0,0" Text="Az oldalt szerkesztették:  Komiszár János és" />
+                <TextBlock Margin="30,0,0,0" Text="Vida-Szücs Gellért" />
+
+            </StackPanel>
+        </StatusBar>
+    </Grid>
+
+</Window>

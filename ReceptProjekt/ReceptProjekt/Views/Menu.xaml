@@ -1,0 +1,31 @@
+﻿<UserControl
+    x:Class="ReceptProjekt.Views.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ReceptProjekt.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <StackPanel Background="ForestGreen">
+        <Border>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    Margin="30,5,5,5"
+                    FontFamily="Segoe Print"
+                    FontSize="43"
+                    FontStyle="Italic"
+                    FontWeight="Bold"
+                    Foreground="Black"
+                    Text="{Binding StatusBarText}" />
+            </StackPanel>
+
+        </Border>
+    </StackPanel>
+
+
+
+
+</UserControl>

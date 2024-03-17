@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.1" />
+    <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\jani.png" />
+    <Resource Include="Images\kreta_atl.png" />
+    <Resource Include="Images\profil.jpg" />
+    <Resource Include="Images\profile.png" />
+    <Resource Include="Images\recept2.jpg" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Remove="Images\jani.png" />
+		<None Remove="Images\kreta_atl.png" />
+		<None Remove="Images\profil.jpg" />
+		<None Remove="Images\profile.png" />
+		<None Remove="Images\recept2.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\HttpService\HttpService.csproj" />
+	  <ProjectReference Include="..\Shared\Shared\Shared.csproj" />
+	</ItemGroup>
+
+</Project>
