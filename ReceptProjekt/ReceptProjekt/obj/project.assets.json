@@ -2068,11 +2068,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecept\\ReceptProjekt\\ReceptProjekt\\ReceptProjekt.csproj",
+      "projectUniqueName": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\ReceptProjekt\\ReceptProjekt.csproj",
       "projectName": "ReceptProjekt",
-      "projectPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecept\\ReceptProjekt\\ReceptProjekt\\ReceptProjekt.csproj",
+      "projectPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\ReceptProjekt\\ReceptProjekt.csproj",
       "packagesPath": "C:\\Users\\csze2komjan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecept\\ReceptProjekt\\ReceptProjekt\\obj\\",
+      "outputPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\ReceptProjekt\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2094,11 +2094,11 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecept\\ReceptProjekt\\HttpService\\HttpService.csproj": {
-              "projectPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecept\\ReceptProjekt\\HttpService\\HttpService.csproj"
+            "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\HttpService\\HttpService.csproj": {
+              "projectPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\HttpService\\HttpService.csproj"
             },
-            "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecept\\ReceptProjekt\\Shared\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecept\\ReceptProjekt\\Shared\\Shared\\Shared.csproj"
+            "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\Shared\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\Shared\\Shared\\Shared.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2ksb7RYuaVfX4btwt+3FqKjmQyG1N5dXr7wPqZC9+wTUUjPRBQlle1LtOU8qJQoseyb5Hn3vUPiuTaPG9KJtTg==",
+  "dgSpecHash": "lDGBxXfh+lv0nta9dUf3QpzHn9tBXW0Twe3S0vbP+GVJKAlUhVBGSZnfSyIl7mTgXf+zWE6lUioEmNnM9PrJ2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecept\\ReceptProjekt\\HttpService\\HttpService.csproj",
+  "projectFilePath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\HttpService\\HttpService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\csze2komjan\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\csze2komjan\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",

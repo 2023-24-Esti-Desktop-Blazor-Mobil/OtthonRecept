@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ALnRZ2lgLMuciP+ma4qp8S3MGOyPgXl7rhFi1jFuCMgbQXoLDWj7ZT/uh8HwR1r7C8+LOD3UkLT3RCgNZxm8Nw==",
+  "dgSpecHash": "5rL8iYQHIiwq3+Gy9VfmYru9DX3IOKqq6RESkmVasi8gUCKqzETVzjlqI/daNy0DW7we8icMyFP4RM2/KUQEeg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecept\\ReceptProjekt\\BackEnd\\BackEnd.csproj",
+  "projectFilePath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\BackEnd\\BackEnd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\csze2komjan\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.12\\microsoft.aspnetcore.openapi.7.0.12.nupkg.sha512",
     "C:\\Users\\csze2komjan\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.15\\microsoft.entityframeworkcore.7.0.15.nupkg.sha512",

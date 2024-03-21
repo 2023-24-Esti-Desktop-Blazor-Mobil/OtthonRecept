@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nek4EqCTUTt/de25DYraeTYYRYsCb+QQOUxr4ugy49uDQwVXm+uCQHnegrUTbp82W5vI5XND0f2cyaJOtMHoYA==",
+  "dgSpecHash": "FZ+eEsgN4C3pC4HScQGNSXDpf70pE+omc2cLLD2fWBddA5Od5Sz2zr1+YgGcg4QV6/G4mxttFJeBkg2bPSAvjw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecept\\ReceptProjekt\\ReceptProjekt\\ReceptProjekt.csproj",
+  "projectFilePath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\ReceptProjekt\\ReceptProjekt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\csze2komjan\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\csze2komjan\\.nuget\\packages\\extended.wpf.toolkit\\4.5.1\\extended.wpf.toolkit.4.5.1.nupkg.sha512",

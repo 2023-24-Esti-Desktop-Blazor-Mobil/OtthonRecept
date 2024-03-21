@@ -537,11 +537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecept\\ReceptProjekt\\HttpService\\HttpService.csproj",
+      "projectUniqueName": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\HttpService\\HttpService.csproj",
       "projectName": "HttpService",
-      "projectPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecept\\ReceptProjekt\\HttpService\\HttpService.csproj",
+      "projectPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\HttpService\\HttpService.csproj",
       "packagesPath": "C:\\Users\\csze2komjan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecept\\ReceptProjekt\\HttpService\\obj\\",
+      "outputPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\HttpService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -563,8 +563,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecept\\ReceptProjekt\\Shared\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecept\\ReceptProjekt\\Shared\\Shared\\Shared.csproj"
+            "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\Shared\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\Shared\\Shared\\Shared.csproj"
             }
           }
         }

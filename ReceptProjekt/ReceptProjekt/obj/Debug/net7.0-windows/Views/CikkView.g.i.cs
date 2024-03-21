@@ -55,7 +55,7 @@ namespace ReceptProjekt.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ReceptProjekt;V1.0.0.0;component/views/cikkview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ReceptProjekt;component/views/cikkview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\CikkView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
