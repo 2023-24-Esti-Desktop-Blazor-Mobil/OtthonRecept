@@ -69,7 +69,7 @@
             Grid.Column="2"
             Margin="5"
             ItemsSource="{Binding Kepzettsegek}"
-            SelectedItem="{Binding SelectedSzemely.CookingLevel}" />
+            SelectedItem="{Binding SelectedSzemely.Kepzettseg}" />
         <TextBox
             Grid.Row="3"
             Grid.Column="2"

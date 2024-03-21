@@ -10,6 +10,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Resources\ViewModelViewDataTamplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Styles\ControlBarButton.xaml">
       <SubType>Designer</SubType>
     </Page>
