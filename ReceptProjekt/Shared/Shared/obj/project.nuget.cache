@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "emtav4quzz7fizdZWOFe2sc7MAXV1gBo+36KqRnN2CWsOeHTedbR85u4B6mQBu7JGpQwWM7aE4hKU8CY7xQtxw==",
+  "dgSpecHash": "3nDRS2uV+vlZyVEGq3goqCcsJl7Xt5fkwm9fMYKyJR9US04j+MruNhj6TGVhWAH2IDsGjJdlNZ5a2DeNn78rYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\Shared\\Shared\\Shared.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Komiszár János\\Source\\Repos\\OtthonReceptotthon\\ReceptProjekt\\Shared\\Shared\\Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Komiszár János\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\Komiszár János\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\Komiszár János\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512"
+  ],
   "logs": []
 }

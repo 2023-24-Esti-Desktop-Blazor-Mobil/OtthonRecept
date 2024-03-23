@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\csze2komjan\Source\Repos\OtthonRecepte\ReceptProjekt\ReceptProjekt\obj\Debug\net7.0-windows\
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\ReceptProjekt\obj\Debug\net7.0-windows\
 ReceptProjekt
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\csze2komjan\Source\Repos\OtthonRecepte\ReceptProjekt\ReceptProjekt\App.xaml
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\ReceptProjekt\App.xaml
 13-1581503508
 
 17-1964240285
-245-1141542500
+245-2143312680
 Resources\ViewModelViewDataTamplate.xaml;Styles\ControlBarButton.xaml;Styles\IconButton.xaml;Styles\MenuButtons.xaml;Styles\SubMenuButtonStyle.xaml;Styles\UIColors.xaml;Views\Belepes.xaml;Views\CikkView.xaml;Views\LeftPanel.xaml;Views\MainWindow.xaml;Views\Menu.xaml;Views\ReceptView.xaml;Views\SzemelyView.xaml;
 
 False

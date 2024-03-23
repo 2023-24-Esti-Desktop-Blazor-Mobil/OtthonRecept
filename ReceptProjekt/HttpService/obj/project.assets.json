@@ -531,23 +531,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\csze2komjan\\.nuget\\packages\\": {},
+    "C:\\Users\\Komiszár János\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\HttpService\\HttpService.csproj",
+      "projectUniqueName": "C:\\Users\\Komiszár János\\Source\\Repos\\OtthonReceptotthon\\ReceptProjekt\\HttpService\\HttpService.csproj",
       "projectName": "HttpService",
-      "projectPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\HttpService\\HttpService.csproj",
-      "packagesPath": "C:\\Users\\csze2komjan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\HttpService\\obj\\",
+      "projectPath": "C:\\Users\\Komiszár János\\Source\\Repos\\OtthonReceptotthon\\ReceptProjekt\\HttpService\\HttpService.csproj",
+      "packagesPath": "C:\\Users\\Komiszár János\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Komiszár János\\Source\\Repos\\OtthonReceptotthon\\ReceptProjekt\\HttpService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\csze2komjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Komiszár János\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -563,8 +563,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\Shared\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\csze2komjan\\Source\\Repos\\OtthonRecepte\\ReceptProjekt\\Shared\\Shared\\Shared.csproj"
+            "C:\\Users\\Komiszár János\\Source\\Repos\\OtthonReceptotthon\\ReceptProjekt\\Shared\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\Komiszár János\\Source\\Repos\\OtthonReceptotthon\\ReceptProjekt\\Shared\\Shared\\Shared.csproj"
             }
           }
         }
@@ -573,6 +573,9 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "default"
       }
     },
     "frameworks": {
@@ -599,6 +602,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.15, 7.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.15, 7.0.15]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.15, 7.0.15]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -607,7 +624,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

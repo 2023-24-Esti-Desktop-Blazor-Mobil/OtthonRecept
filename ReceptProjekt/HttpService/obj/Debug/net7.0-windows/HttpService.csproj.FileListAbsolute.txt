@@ -85,3 +85,19 @@ C:\Users\csze2komjan\Source\Repos\OtthonRecepte\ReceptProjekt\HttpService\obj\De
 C:\Users\csze2komjan\Source\Repos\OtthonRecepte\ReceptProjekt\HttpService\obj\Debug\net7.0-windows\refint\HttpService.dll
 C:\Users\csze2komjan\Source\Repos\OtthonRecepte\ReceptProjekt\HttpService\obj\Debug\net7.0-windows\HttpService.pdb
 C:\Users\csze2komjan\Source\Repos\OtthonRecepte\ReceptProjekt\HttpService\obj\Debug\net7.0-windows\ref\HttpService.dll
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\bin\Debug\net7.0-windows\HttpService.deps.json
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\bin\Debug\net7.0-windows\HttpService.dll
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\bin\Debug\net7.0-windows\HttpService.pdb
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\bin\Debug\net7.0-windows\Shared.dll
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\bin\Debug\net7.0-windows\Shared.pdb
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\obj\Debug\net7.0-windows\HttpService.csproj.AssemblyReference.cache
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\obj\Debug\net7.0-windows\HttpService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\obj\Debug\net7.0-windows\HttpService.AssemblyInfoInputs.cache
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\obj\Debug\net7.0-windows\HttpService.AssemblyInfo.cs
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\obj\Debug\net7.0-windows\HttpService.csproj.CoreCompileInputs.cache
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\obj\Debug\net7.0-windows\HttpService.sourcelink.json
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\obj\Debug\net7.0-windows\HttpService.csproj.CopyComplete
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\obj\Debug\net7.0-windows\HttpService.dll
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\obj\Debug\net7.0-windows\refint\HttpService.dll
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\obj\Debug\net7.0-windows\HttpService.pdb
+C:\Users\Komiszár János\Source\Repos\OtthonReceptotthon\ReceptProjekt\HttpService\obj\Debug\net7.0-windows\ref\HttpService.dll
