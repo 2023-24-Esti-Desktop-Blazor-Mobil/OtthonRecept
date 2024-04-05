@@ -144,7 +144,11 @@
             Grid.Column="2"
             Margin="2,10,2,2"
             Padding="0,2"
-            Text="{Binding SelectedCikk.Description}" />
+            AcceptsReturn="True"
+            Language="HU"
+            SpellCheck.IsEnabled="True"
+            Text="{Binding SelectedCikk.Description}"
+            TextWrapping="Wrap" />
         <Button
             Grid.Row="6"
             Grid.Column="1"

@@ -37,10 +37,12 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
 
         </Grid.RowDefinitions>
 
         <ListView
+            Name="SzemelyLista"
             Grid.RowSpan="8"
             Grid.Column="0"
             Margin="5"
@@ -135,22 +137,105 @@
             CommandParameter="{Binding SelectedSzemely}"
             Content="🗑 Törlés" />
         <Button
+            Name="searchgomb"
             Grid.Row="8"
             Grid.Column="0"
             MinWidth="80"
             Margin="2,10,2,2"
             HorizontalAlignment="Center"
+            Click="Button_Click"
             Content="Keresés" />
         <Grid Grid.Row="9">
             <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-                <ContentControl Grid.Row="0" Content="{Binding SelectedSubViewModel}"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <ContentControl Grid.Row="0" Content="{Binding SelectedSubViewModel}" />
             </Grid>
-           
+
         </Grid>
-        
+        <Grid
+            x:Name="searchview"
+            Grid.Row="10"
+            Margin="10"
+            Background="Silver"
+            Visibility="Hidden">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0">Szűrés</Label>
+                <Grid
+                    Grid.Row="1"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <StackPanel
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Orientation="Horizontal">
+                        <Label Content="Keresés Vezetéknév alapján" />
+                    </StackPanel>
+                    <TextBox
+                        Name="txtFilterVezeteknev"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Width="40" />
+
+                    <StackPanel
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Orientation="Horizontal">
+                        <Label Content="Keresés képzettség alapján" />
+                    </StackPanel>
+                    <TextBox
+                        Name="txtFilterKepzettseg"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Width="40" />
+                    <StackPanel
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        Orientation="Horizontal">
+                        <Label Content="Életkor alapján" IsEnabled="{Binding CanSearchByUploadDate}" />
+                    </StackPanel>
+                    <StackPanel
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox
+                                Name="MinEletkor"
+                                Width="40"
+                                Margin="28,0,0,0" />
+                            <Label>-tól</Label>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox
+                                Name="MaxEletkor"
+                                Width="40"
+                                Margin="28,0,0,0" />
+                            <Label>-ig</Label>
+                        </StackPanel>
+                    </StackPanel>
+
+                </Grid>
+            </Grid>
+
+        </Grid>
+
 
 
 
