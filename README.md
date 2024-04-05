@@ -1,2 +1,0 @@
-# OtthonRecept
-RecepGyakorlás

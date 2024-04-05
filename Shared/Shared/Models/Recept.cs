@@ -17,33 +17,36 @@ namespace Shared.Models
         public DateTime Idopont {  get; set; }
         public bool HasId => Id != Guid.Empty;
 
-        public Guid? IngredientId { get; set; }
-        public virtual Ingredient? Ingredient { get; set; }
+        //public Guid? IngredientId { get; set; }
+        //public virtual Ingredient? Ingredient { get; set; }
 
 
         public Recept()
         {
             Id = Guid.Empty;
-            Name = String.Empty;
-            Description = String.Empty;
+            Name = string.Empty;
+            Description = string.Empty;
             FeltoltoId = Guid.Empty;
-            IngredientId = Guid.Empty;
+            //IngredientId = Guid.Empty;
             Idopont = DateTime.Now;
         }
-        public Recept(string name, string description, Guid feltoltoId, Guid ingredientId, DateTime idopont)
+        public Recept(string name, string description, Guid feltoltoId,
+            //Guid ingredientId,
+            DateTime idopont)
         {
             Id = Guid.NewGuid();
             Name = name;
             Description = description;
             FeltoltoId = feltoltoId;
-            IngredientId = ingredientId;
+            //IngredientId = ingredientId;
             Idopont = idopont;
 
         }
 
         public override string ToString()
         {
-            return $" Nev: {Name} \t Időpont: {String.Format("{0:yyyy.MM.dd.}", Idopont)} \t Leírás: {Description}";
+            
+            return $" Nev: {Name} \t Időpont: {String.Format("{0:yyyy.MM.dd.}", Idopont)}";
         }
     }
 }

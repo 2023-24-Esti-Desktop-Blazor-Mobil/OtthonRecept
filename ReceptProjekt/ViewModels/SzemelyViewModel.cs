@@ -15,6 +15,7 @@ using Shared.Models;
 using Shared.Responses;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
+
 namespace ReceptProjekt.ViewModels
 {
     public partial class SzemelyViewModel : BaseViewModel
@@ -43,17 +44,22 @@ namespace ReceptProjekt.ViewModels
         [RelayCommand]
         private async Task DoSave(Szemely newSzemely)
         {
-            if (_szemelyService is not null)
-            {
-                ControllerResponse result;
-                if (newSzemely.HasId)
-                    result = await _szemelyService.UpdateAsync(newSzemely);
-                else
-                    result = await _szemelyService.InsertAsync(newSzemely);
+            MessageBoxResult result = System.Windows.MessageBox.Show("Biztosan menteni kívánja a személyt?", "Személy mentése", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
 
-                if (!result.HasError)
+            {
+                if (_szemelyService is not null)
                 {
-                    await UpdateView();
+                    ControllerResponse result1;
+                    if (newSzemely.HasId)
+                        result1 = await _szemelyService.UpdateAsync(newSzemely);
+                    else
+                        result1 = await _szemelyService.InsertAsync(newSzemely);
+
+                    if (!result1.HasError)
+                    {
+                        await UpdateView();
+                    }
                 }
             }
         }
@@ -61,10 +67,12 @@ namespace ReceptProjekt.ViewModels
         [RelayCommand]
         private async Task DoRemove(Szemely szemelyToDelete)
         {
-            if (_szemelyService is not null)
+            MessageBoxResult result = System.Windows.MessageBox.Show("Biztosan törölni kívánja a személyt?", "Személy törlése", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+                if (_szemelyService is not null)
             {
-                ControllerResponse result = await _szemelyService.DeleteAsync(szemelyToDelete.Id);
-                if (result.IsSuccess)
+                ControllerResponse result1 = await _szemelyService.DeleteAsync(szemelyToDelete.Id);
+                if (result1.IsSuccess)
                 {
                     await UpdateView();
                 }
@@ -74,7 +82,9 @@ namespace ReceptProjekt.ViewModels
         [RelayCommand]
         private void DoNewSzemely()
         {
-            SelectedSzemely = new Szemely();
+            MessageBoxResult result = System.Windows.MessageBox.Show("Biztosan új személyt rögzít?", "Személy rögzítése", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            { SelectedSzemely = new Szemely(); }
         }
 
         private async Task UpdateView()

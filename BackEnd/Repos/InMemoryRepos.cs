@@ -33,7 +33,12 @@ namespace BackEnd.Repos
         {
         }
     }
-
+    public class ReceptInMemoryRepo : ReceptRepo<InmemoryContext>
+    {
+        public ReceptInMemoryRepo(IDbContextFactory<InmemoryContext> dbContextFactory) : base(dbContextFactory)
+        {
+        }
+    }
 
 
 }

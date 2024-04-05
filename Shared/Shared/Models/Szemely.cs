@@ -40,8 +40,8 @@ namespace Shared.Models
         }
         public override string ToString()
         {
-            string kepzettseg = KepzettsegId is null ? "" : $"{Kepzettseg}";
-            return $"{FirstName} {LastName}, Képzettségi szint: {kepzettseg}, Age: {Age}";
+            
+            return $"{FirstName} {LastName}";
         }
     }
 }

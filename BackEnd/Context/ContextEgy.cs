@@ -14,8 +14,6 @@ namespace BackEnd.Context
         public DbSet<Ingredient> Ingredients { get; set; }
         public DbSet<Measurements> Measurements { get; set; }
 
-
-
         public ContextEgy(DbContextOptions options) : base(options)
         {
         }

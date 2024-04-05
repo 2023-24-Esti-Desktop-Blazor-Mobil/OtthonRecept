@@ -6,7 +6,8 @@
     xmlns:local="clr-namespace:ReceptProjekt.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewmodel="clr-namespace:ReceptProjekt.ViewModels"
-    d:DataContext="{d:DesignInstance Type=viewmodel:SzemelyViewModel, IsDesignTimeCreatable=True}"
+    d:DataContext="{d:DesignInstance Type=viewmodel:SzemelyViewModel,
+                                     IsDesignTimeCreatable=True}"
     d:DesignHeight="450"
     d:DesignWidth="800"
     mc:Ignorable="d">
@@ -19,9 +20,9 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="400" />
+            <ColumnDefinition Width="350" />
             <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="350" />
 
 
         </Grid.ColumnDefinitions>
@@ -35,15 +36,40 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
 
         </Grid.RowDefinitions>
 
-        <ListBox
-            Grid.RowSpan="9"
+        <ListView
+            Grid.RowSpan="8"
             Grid.Column="0"
             Margin="5"
             ItemsSource="{Binding Szemelyek}"
-            SelectedItem="{Binding SelectedSzemely}" />
+            SelectedItem="{Binding SelectedSzemely}">
+
+            <ListView.View>
+                <GridView AllowsColumnReorder="true">
+                    <GridViewColumn
+                        Width="90"
+                        DisplayMemberBinding="{Binding Path=FirstName}"
+                        Header="Keresztnév:" />
+                    <GridViewColumn
+                        Width="90"
+                        DisplayMemberBinding="{Binding Path=LastName}"
+                        Header="Vezetéknév" />
+                    <GridViewColumn
+                        Width="110"
+                        DisplayMemberBinding="{Binding Path=Kepzettseg}"
+                        Header="Kepzettseg:" />
+                    <GridViewColumn
+                        Width="40"
+                        DisplayMemberBinding="{Binding Path=Age}"
+                        Header="Életkor:" />
+                </GridView>
+
+            </ListView.View>
+        </ListView>
+
         <Label Grid.Row="0" Grid.Column="1">Vezetéknév:</Label>
         <Label Grid.Row="1" Grid.Column="1">Keresztnév:</Label>
         <Label Grid.Row="2" Grid.Column="1">Tudásszintje:</Label>
@@ -65,8 +91,10 @@
             Grid.Row="2"
             Grid.Column="2"
             Margin="5"
+            DisplayMemberPath="SzemelyKepzettseg"
             ItemsSource="{Binding Kepzettsegek}"
-            SelectedItem="{Binding SelectedSzemely.Kepzettseg}" />
+            SelectedValue="{Binding SelectedSzemely.KepzettsegId}"
+            SelectedValuePath="Id" />
         <TextBox
             Grid.Row="3"
             Grid.Column="2"
@@ -87,7 +115,7 @@
             Margin="2,10,2,2"
             HorizontalAlignment="Center"
             Command="{Binding DoNewSzemelyCommand}"
-            Content="Új adat" />
+            Content="✏ Új adat" />
         <Button
             Grid.Row="6"
             Grid.Column="1"
@@ -96,7 +124,7 @@
             HorizontalAlignment="Center"
             Command="{Binding DoSaveCommand}"
             CommandParameter="{Binding SelectedSzemely}"
-            Content="Mentés" />
+            Content="💾 Mentés" />
         <Button
             Grid.Row="7"
             Grid.Column="1"
@@ -105,14 +133,24 @@
             HorizontalAlignment="Center"
             Command="{Binding DoRemoveCommand}"
             CommandParameter="{Binding SelectedSzemely}"
-            Content="Törlés" />
+            Content="🗑 Törlés" />
         <Button
             Grid.Row="8"
-            Grid.Column="1"
+            Grid.Column="0"
             MinWidth="80"
             Margin="2,10,2,2"
             HorizontalAlignment="Center"
             Content="Keresés" />
+        <Grid Grid.Row="9">
+            <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+                <ContentControl Grid.Row="0" Content="{Binding SelectedSubViewModel}"/>
+            </Grid>
+           
+        </Grid>
+        
 
 
 

@@ -14,7 +14,7 @@ namespace Shared.Dtos
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } =string.Empty;
         public Guid? FeltoltoId { get; set; } = Guid.Empty;
-        public DateTime Idopont { get; set; }   = DateTime.Now;
+        public DateTime Idopont { get; set; } = DateTime.Now;
         public virtual Szemely? Szemely { get; set; }
 
     }

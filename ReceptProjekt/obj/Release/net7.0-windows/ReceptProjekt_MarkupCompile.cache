@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Komiszár János\Source\Repos\Otthon\ReceptProjekt\obj\Release\net7.0-windows\
+C:\Users\Komiszár János\source\repos\Otthon\ReceptProjekt\obj\Release\net7.0-windows\
 ReceptProjekt
 none
 false
 TRACE;RELEASE;NET;NET7_0;NETCOREAPP
-C:\Users\Komiszár János\Source\Repos\Otthon\ReceptProjekt\App.xaml
-13-1581503508
+C:\Users\Komiszár János\source\repos\Otthon\ReceptProjekt\App.xaml
+141945524352
 
-17-1964240285
+19-1635445224
 245-1162555855
-Resources\ViewModelViewDataTamplate.xaml;Styles\ControlBarButton.xaml;Styles\IconButton.xaml;Styles\MenuButtons.xaml;Styles\SubMenuButtonStyle.xaml;Styles\UIColors.xaml;Views\Belepes.xaml;Views\CikkView.xaml;Views\LeftPanel.xaml;Views\MainWindow.xaml;Views\Menu.xaml;Views\ReceptView.xaml;Views\SzemelyView.xaml;
+Resources\ViewModelViewDataTamplate.xaml;Styles\ControlBarButton.xaml;Styles\IconButton.xaml;Styles\MenuButtons.xaml;Styles\SubMenuButtonStyle.xaml;Styles\UIColors.xaml;Views\Belepes.xaml;Views\CikkView.xaml;Views\LeftPanel.xaml;Views\MainWindow.xaml;Views\Menu.xaml;Views\ReceptView.xaml;Views\SzemelyKeressView.xaml;Views\SzemelyView.xaml;
 
 True
 

@@ -19,7 +19,7 @@ namespace ReceptProjekt.Extensions
             services.AddScoped<ISzemelyService, SzemelyService>();
             services.AddScoped<ICikkService, CikkService>();
             services.AddScoped<IKepzettsegService, KepzettsegService>();
-            //services.AddScoped<IReceptService, ReceptService>();
+            services.AddScoped<IReceptService, ReceptService>();
 
         }
 
@@ -28,7 +28,7 @@ namespace ReceptProjekt.Extensions
             services.AddScoped<SzemelyAssambler>();
             services.AddScoped<CikkAssambler>();
             services.AddScoped<KepzettsegAssambler>();
-            //services.AddScoped<ReceptAssambler>();
+            services.AddScoped<ReceptAssambler>();
 
         }
 

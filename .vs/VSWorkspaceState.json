@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ReceptProjekt",
+    "\\ReceptProjekt\\Views",
+    "\\Shared",
+    "\\Shared\\Shared",
+    "\\Shared\\Shared\\Models"
   ],
   "SelectedNode": "\\ReceptProjekt.sln",
   "PreviewInSolutionExplorer": false

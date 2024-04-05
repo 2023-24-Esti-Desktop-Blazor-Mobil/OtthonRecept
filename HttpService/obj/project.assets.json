@@ -541,7 +541,7 @@
       "projectName": "HttpService",
       "projectPath": "C:\\Users\\Komiszár János\\Source\\Repos\\Otthon\\HttpService\\HttpService.csproj",
       "packagesPath": "C:\\Users\\Komiszár János\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Komiszár János\\Source\\Repos\\Otthon\\HttpService\\obj\\",
+      "outputPath": "C:\\Users\\Komiszár János\\source\\repos\\Otthon\\HttpService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

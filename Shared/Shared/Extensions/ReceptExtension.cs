@@ -18,9 +18,10 @@ namespace Shared.Extensions
                 Name = recept.Name,
                 Description = recept.Description,
                 FeltoltoId= recept.FeltoltoId,
-                IngredientId = recept.IngredientId,
-                Ingredient = recept.Ingredient,
+                //IngredientId = recept.IngredientId,
+                //Ingredient = recept.Ingredient,
                 Szemely = recept.Szemely,
+                Idopont = recept.Idopont,
             };
         }
 
@@ -32,9 +33,10 @@ namespace Shared.Extensions
                 Name = receptdto.Name,
                 Description = receptdto.Description,
                 FeltoltoId = receptdto.FeltoltoId,
-                IngredientId = receptdto.IngredientId,
-                Ingredient = receptdto.Ingredient,
+                //IngredientId = receptdto.IngredientId,
+                //Ingredient = receptdto.Ingredient,
                 Szemely=receptdto.Szemely,
+                Idopont = receptdto.Idopont,
 
             };
         }

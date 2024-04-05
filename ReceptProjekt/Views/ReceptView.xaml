@@ -21,9 +21,9 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="400" />
+            <ColumnDefinition Width="350" />
             <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="350" />
 
 
         </Grid.ColumnDefinitions>
@@ -36,7 +36,7 @@
             <RowDefinition Height="20px" />
             <RowDefinition Height="20px" />
             <RowDefinition Height="20px" />
-            <RowDefinition Height="20px" />
+            <RowDefinition Height="50px" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
@@ -46,12 +46,33 @@
 
         </Grid.RowDefinitions>
 
-        <ListBox
-            Grid.RowSpan="9"
+        <ListView
+            Grid.RowSpan="14"
             Grid.Column="0"
             Margin="5"
             ItemsSource="{Binding Receptek}"
-            SelectedItem="{Binding SelectedRecept}" />
+            SelectedItem="{Binding SelectedRecept}">
+            <ListView.View>
+                <GridView AllowsColumnReorder="true">
+                    <GridViewColumn
+                        Width="113"
+                        DisplayMemberBinding="{Binding Path=Name}"
+                        Header="Receptnév:" />
+                    <GridViewColumn
+                        Width="114"
+                        DisplayMemberBinding="{Binding Path=Szemely}"
+                        Header="Feltöltő" />
+                    <GridViewColumn
+                        Width="103"
+                        DisplayMemberBinding="{Binding Path=Idopont}"
+                        Header="Felt.Datum:" />
+                </GridView>
+
+            </ListView.View>
+        </ListView>
+
+
+
         <Label Grid.Row="0" Grid.Column="1">Receptneve:</Label>
         <Label Grid.Row="1" Grid.Column="1">Feltöltési Ideje:</Label>
         <Label Grid.Row="2" Grid.Column="1">Id:</Label>
@@ -75,15 +96,12 @@
             Margin="2,10,2,2"
             Padding="0,2"
             Text="{Binding SelectedRecept.Id}" />
-        <TextBox
+        <ListBox
             Grid.Row="3"
             Grid.RowSpan="5"
             Grid.Column="2"
             Margin="2,10,2,2"
-            Padding="0,2"
-            AcceptsReturn="True"
-            Text="{Binding SelectedRecept.Ingredients}"
-            TextWrapping="Wrap" />
+            Padding="0,2" />
         <TextBox
             Grid.Row="8"
             Grid.RowSpan="6"
@@ -95,34 +113,34 @@
             TextWrapping="Wrap" />
 
         <Button
-            Grid.Row="10"
-            Grid.Column="1"
-            MinWidth="80"
-            Margin="2,10,2,2"
-            HorizontalAlignment="Center"
-            Command="{Binding DoNewSzemelyCommand}"
-            Content="Új adat" />
-        <Button
             Grid.Row="11"
             Grid.Column="1"
             MinWidth="80"
             Margin="2,10,2,2"
             HorizontalAlignment="Center"
-            Command="{Binding DoSaveCommand}"
-            CommandParameter="{Binding SelectedSzemely}"
-            Content="Mentés" />
+            Command="{Binding DoNewSzemelyCommand}"
+            Content="✏ Új adat" />
         <Button
             Grid.Row="12"
             Grid.Column="1"
             MinWidth="80"
             Margin="2,10,2,2"
             HorizontalAlignment="Center"
-            Command="{Binding DoRemoveCommand}"
+            Command="{Binding DoSaveCommand}"
             CommandParameter="{Binding SelectedSzemely}"
-            Content="Törlés" />
+            Content="💾 Mentés" />
         <Button
             Grid.Row="13"
             Grid.Column="1"
+            MinWidth="80"
+            Margin="2,10,2,2"
+            HorizontalAlignment="Center"
+            Command="{Binding DoRemoveCommand}"
+            CommandParameter="{Binding SelectedSzemely}"
+            Content="🗑 Törlés" />
+        <Button
+            Grid.Row="14"
+            Grid.Column="0"
             MinWidth="80"
             Margin="2,10,2,2"
             HorizontalAlignment="Center"

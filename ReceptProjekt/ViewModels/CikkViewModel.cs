@@ -11,6 +11,7 @@ using Microsoft.Extensions.Primitives;
 using Shared.Models;
 using HttpService.Service;
 using Shared.Responses;
+using System.Windows;
 
 namespace ReceptProjekt.ViewModels
 
@@ -38,17 +39,21 @@ namespace ReceptProjekt.ViewModels
         [RelayCommand]
         private async Task DoSave(Cikk newCikk)
         {
-            if (_cikkService is not null)
+            MessageBoxResult result = MessageBox.Show("Biztosan menteni kívánja a bejegyzést?", "Bejegyzés módosítása", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
             {
-                ControllerResponse result;
-                if (newCikk.HasId)
-                    result = await _cikkService.UpdateAsync(newCikk);
-                else
-                    result = await _cikkService.InsertAsync(newCikk);
-
-                if (!result.HasError)
+                if (_cikkService is not null)
                 {
-                    await UpdateView();
+                    ControllerResponse result1;
+                    if (newCikk.HasId)
+                        result1 = await _cikkService.UpdateAsync(newCikk);
+                    else
+                        result1 = await _cikkService.InsertAsync(newCikk);
+
+                    if (!result1.HasError)
+                    {
+                        await UpdateView();
+                    }
                 }
             }
         }
@@ -56,20 +61,27 @@ namespace ReceptProjekt.ViewModels
         [RelayCommand]
         private async Task DoRemove(Cikk cikkToDelete)
         {
-            if (_cikkService is not null)
+            MessageBoxResult result = MessageBox.Show("Biztosan törölni kívánja a bejegyzést?", "Bejegyzés törlése", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
             {
-                ControllerResponse result = await _cikkService.DeleteAsync(cikkToDelete.Id);
-                if (result.IsSuccess)
+                if (_cikkService is not null)
                 {
-                    await UpdateView();
+                    ControllerResponse result1 = await _cikkService.DeleteAsync(cikkToDelete.Id);
+                    if (result1.IsSuccess)
+                    {
+                        await UpdateView();
+                    }
                 }
             }
         }
 
         [RelayCommand]
         private void DoNewCikk()
+
         {
-            SelectedCikk = new Cikk();
+            MessageBoxResult result = MessageBox.Show("Biztosan új bejegyzést kíván létrehozni?", "Bejegyzés létrehozása", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            { SelectedCikk = new Cikk(); }
         }
 
         private async Task UpdateView()

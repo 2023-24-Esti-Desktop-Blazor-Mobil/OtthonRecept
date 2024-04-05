@@ -12,7 +12,7 @@ namespace BackEnd.Repos
 
         public IQueryable<Recept> SelectAllIncluded()
         {
-            return FindAll().Include(recept => recept.Ingredient);
+            return FindAll().Include(recept => recept.Szemely);
         }
         
     }

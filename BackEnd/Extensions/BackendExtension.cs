@@ -40,6 +40,7 @@ namespace BackEnd.Extensions
             services.AddScoped<IKepzettsegRepo, KepzettsegInMemoryRepo>();
             services.AddScoped<IIngredientRepo, IngredientInMemoryRepo>();
             services.AddScoped<IMeasurementsRepo, MeasurementsInMemoryRepo>();
+            services.AddScoped<IReceptRepo, ReceptInMemoryRepo>();
 
         }
         public static void ConfigureAssamblers(this IServiceCollection services)
@@ -49,7 +50,7 @@ namespace BackEnd.Extensions
             services.AddScoped<KepzettsegAssambler>();
             services.AddScoped<IngredientAssambler>();
             services.AddScoped<MeasurementsAssambler>();
-
+            services.AddScoped<ReceptAssambler>();
 
         }
     }

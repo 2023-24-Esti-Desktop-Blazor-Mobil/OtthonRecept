@@ -13,7 +13,7 @@ namespace Shared.Dtos
         public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public DateTime Idopont { get; set; }
+        public DateTime Idopont { get; set; } = DateTime.Now;
 
         public Guid? FeltoltoId { get; set; } = Guid.Empty;
         public virtual Szemely? Szemely { get; set; }

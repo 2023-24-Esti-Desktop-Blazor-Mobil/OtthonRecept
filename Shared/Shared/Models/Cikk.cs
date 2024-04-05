@@ -14,7 +14,7 @@ namespace Shared.Models
         public string Description { get; set; }
         public Guid? FeltoltoId { get; set; } 
         public virtual Szemely? Szemely { get; set; }
-        public DateTime Idopont { get; set; }
+        public DateTime Idopont { get; set; } 
         public bool HasId => Id != Guid.Empty;
        
         public Cikk()
@@ -36,7 +36,7 @@ namespace Shared.Models
 
         public override string ToString()
         {
-            return $" Nev: {Name} \t Időpont: {String.Format("{0:yyyy.MM.dd.}", Idopont)}  \t Leírás: {Description} ";
+            return $" Nev: {Name} \t Időpont: {String.Format("{0:yyyy.MM.dd.}", Idopont)} ";
         }
     }
 }
